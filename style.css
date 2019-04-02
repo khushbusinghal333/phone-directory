@@ -1,0 +1,19 @@
+.center{
+    text-align: center;
+}
+.header {
+    padding: 20px;
+    background: linear-gradient(90deg, #000, #ccc, #000);
+    color: beige;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 56px;
+}
+.btn{
+    background-color: black;
+    border-radius: 0;
+    
+}
+.btn:hover{
+    background-color: grey;
+}

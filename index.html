@@ -40,7 +40,7 @@ Add New Subscriber
   <div class="modal" id="myModal">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-      
+      <form>
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">Add Subscriber</h4>
@@ -50,17 +50,17 @@ Add New Subscriber
         <!-- Modal body -->
         <div class="modal-body">
           <label for="name">Enter name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <input type="text" name="name" id="sub_name"/><br>
+            <input type="text" name="name" id="sub_name" required><br>
           <label for="phone">Enter mob no</label>&nbsp;&nbsp;&nbsp;
-            <input type="tel" pattern="[789][0-9]{9}" name="phone" id="sub_phone"/>  
+            <input type="number" name="phone" onkeyup="check(); return false;" id="sub_phone" required/> <span id="message"></span> 
             
         </div>
         
         <!-- Modal footer -->
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger add" data-dismiss="modal">ADD</button>
+          <button type="submit" class="btn btn-danger add" data-dismiss="modal">ADD</button>
         </div>
-        
+          </form>
       </div>
     </div>
   </div>
